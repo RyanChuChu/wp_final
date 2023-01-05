@@ -12,7 +12,6 @@ import categoryModel from './models/category.js';
 import itemModel from "./models/item.js";
 import userModel from "./models/user.js";
 import commentModel from './models/comment.js';
-import responseModel from './models/response.js';
 
 const pubSub = createPubSub();
 
@@ -36,7 +35,6 @@ export const yoga = createYoga({
     itemModel,
     userModel,
     commentModel,
-    responseModel,
   },
   graphiql: {
     subscriptionsProtocol: 'WS'
